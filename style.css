@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+#packaging {
+  width: 100%;
+  height: 100vh;
+}
+#header {
+  width: 100%;
+  padding: 0 32px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#menu {
+  display: flex;
+  list-style: none;
+}
+#menu .item {
+  margin: 0 27px;
+}
+#menu .item a {
+  color: #c0c0c0;
+  text-decoration: none;
+}
+#menu .item a:hover {
+  color: #814646;
+}
+
+#activity {
+  display: flex;
+}
+#activity .item {
+  margin-left: 20px;
+}
+
+#banner {
+  width: 100%;
+  height: 550px;
+  background-image: url("https://thuvien.hocviennhiepanh.com/wp-content/uploads/1-7-2.jpg");
+  margin-top: 40px;
+  display: flex;
+  padding: 0 134px;
+  position: relative;
+}
+#banner .item-left,
+#banner .item-right {
+  width: 50%;
+}
+
+#banner .item-left h2 {
+  font-size: 50px;
+  margin-top: 145px;
+  color: #fff;
+}
+
+#banner .item-left p {
+  color: #ffffffde;
+}
+#banner .item-left button {
+  width: 191px;
+  height: 40px;
+  background-color: #000000d2;
+  margin-top: 40px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+#banner .item-left button:hover {
+  background-color: green;
+}
+.list-item {
+  width: 100x;
+}
