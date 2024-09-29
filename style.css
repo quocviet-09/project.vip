@@ -78,6 +78,35 @@
 #banner .item-left button:hover {
   background-color: green;
 }
-.list-item {
-  width: 100x;
+.items {
+  width: 300px;
+  height: 300px;
+  background-color: #c0c0c0;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+.star {
+  width: 30px;
+}
+
+#wb-product {
+  padding-top: 110px;
+  padding-bottom: 75px;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+#wb-product h2 {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 30px;
+  color: #000000d2;
+}
+
+#list-product {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
 }
