@@ -16,6 +16,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
 }
 #menu {
   display: flex;
@@ -109,4 +111,30 @@
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.name {
+  text-align: center;
+  color: #000;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+#list-product button {
+  width: 191px;
+  height: 40px;
+  background-color: #000000d2;
+  margin-top: 40px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+#list-product button:hover {
+  background-color: yellow;
+}
+a {
+  text-decoration: none;
 }
