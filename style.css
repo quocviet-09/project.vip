@@ -20,6 +20,9 @@
   background-color: #fff;
   z-index: 15;
 }
+.join {
+  padding: 0 20px;
+}
 #menu {
   display: flex;
   list-style: none;
@@ -35,10 +38,13 @@
   color: #814646;
 }
 
-#activity {
+#activities {
   display: flex;
+  align-items: center;
+  color: #000;
+  gap: 20px;
 }
-#activity .item {
+#activities .item {
   margin-left: 20px;
 }
 
@@ -46,7 +52,7 @@
   width: 100%;
   height: 550px;
   background-image: url("https://thuvien.hocviennhiepanh.com/wp-content/uploads/1-7-2.jpg");
-  margin-top: 90px;
+  margin-top: 69px;
   display: flex;
   padding: 0 134px;
   position: relative;
