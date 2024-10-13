@@ -47,4 +47,5 @@ footer {
 }
 button:hover {
   background-color: yellow;
+  scale: 1.25;
 }

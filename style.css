@@ -11,13 +11,14 @@
 }
 #header {
   width: 100%;
-  padding: 0 32px;
-  margin-top: 30px;
+  padding: 16px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
+  background-color: #fff;
+  z-index: 15;
 }
 #menu {
   display: flex;
@@ -45,7 +46,7 @@
   width: 100%;
   height: 550px;
   background-image: url("https://thuvien.hocviennhiepanh.com/wp-content/uploads/1-7-2.jpg");
-  margin-top: 40px;
+  margin-top: 90px;
   display: flex;
   padding: 0 134px;
   position: relative;
@@ -62,7 +63,8 @@
 }
 
 #banner .item-left p {
-  color: #ffffffde;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 #banner .item-left button {
   width: 191px;
@@ -79,13 +81,15 @@
 
 #banner .item-left button:hover {
   background-color: green;
+  scale: 1.25;
 }
 .items {
   width: 300px;
   height: 300px;
-  background-color: #c0c0c0;
+  background-color: #362f2f;
   border-radius: 10px;
   margin-bottom: 50px;
+  object-fit: cover;
 }
 .star {
   width: 30px;
@@ -111,10 +115,14 @@
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+  margin-top: 50px;
 }
 
-.name {
+#list-product .description .price {
   text-align: center;
+}
+.name {
+  text-align: left;
   color: #000;
   margin-top: 20px;
   font-weight: bold;
@@ -134,7 +142,81 @@
 }
 #list-product button:hover {
   background-color: yellow;
+  scale: 1.15;
 }
 a {
   text-decoration: none;
+}
+
+#saleoff {
+  width: 100%;
+  display: flex;
+  height: 330px;
+  margin-top: 60px;
+}
+
+#saleoff .box-left,
+#saleoff .box-right {
+  width: 50%;
+}
+#saleoff .box-left {
+  background-color: #362f2f;
+  text-align: center;
+  min-height: 330px;
+}
+
+#saleoff .box-left h1 {
+  padding-top: 30px;
+  font-size: 50px;
+}
+#saleoff .box-left span {
+  font-size: 50px;
+  color: orange;
+}
+
+#saleoff .box-right {
+  background-image: url("https://chuphinhmenu.com/wp-content/uploads/2018/03/chup-hinh-mon-an-menu-nha-trang-khanh-hoa-0008.jpg");
+}
+.box-right {
+  width: 100%;
+}
+#footer {
+  width: 100%;
+  background-color: #221c1ce7;
+  height: 320px;
+  margin-top: 120px;
+  padding: 0px 63px;
+  padding-top: 55px;
+  display: flex;
+  justify-content: space-around;
+}
+#footer .box {
+  width: 250px;
+  color: #fff;
+}
+#footer .box .menu {
+  margin-top: 40px;
+}
+#footer .box .menu .item {
+  margin-bottom: 12px;
+}
+#footer .box .menu,
+.item a {
+  color: #fff;
+  text-decoration: none;
+}
+#footer .box form input {
+  width: 290px;
+  height: 43px;
+  background: transparent;
+  padding-left: 20px;
+  color: #fff;
+  margin-top: 30px;
+}
+#footer .box form button {
+  width: 100px;
+  height: 40px;
+  background: transparent;
+  color: #fff;
+  margin-top: 20px;
 }
