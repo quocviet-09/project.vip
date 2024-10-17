@@ -54,14 +54,19 @@
   background-image: url("https://thuvien.hocviennhiepanh.com/wp-content/uploads/1-7-2.jpg");
   margin-top: 69px;
   display: flex;
-  padding: 0 134px;
   position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-#banner .item-left,
 #banner .item-right {
   width: 50%;
 }
 
+#banner .item-left {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0 134px;
+}
 #banner .item-left h2 {
   font-size: 50px;
   margin-top: 145px;
@@ -69,8 +74,9 @@
 }
 
 #banner .item-left p {
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  width: 50%;
+  margin-top: 30px;
 }
 #banner .item-left button {
   width: 191px;
