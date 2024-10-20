@@ -43,7 +43,10 @@ footer {
   background-color: pink;
   color: #333;
   text-align: center;
-  padding: 10px 0;
+  margin: 10px 0;
+  position: absolute;
+  bottom: 0;
+  width: 99%;
 }
 button:hover {
   background-color: yellow;
