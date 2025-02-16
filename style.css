@@ -190,6 +190,9 @@
   background-color: yellow;
   scale: 1.15;
 }
+#list-product .items:hover {
+  scale: 1.1;
+}
 a {
   text-decoration: none;
 }

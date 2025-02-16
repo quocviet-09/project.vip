@@ -1,54 +1,86 @@
 body {
-  background-color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
 }
-a {
-  list-style-type: none;
+.container {
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
 }
-
-h1 {
+.quantity-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.quantity-btn {
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  border: none;
+  background-color: #ff5733;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.quantity-input {
+  width: 50px;
   text-align: center;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
-img {
-  width: 500px;
-  padding: 70px;
+.product-section {
+  display: flex;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+.product-image {
+  width: 40%;
   border-radius: 10px;
 }
-
-img:hover {
-  scale: 1.05;
+.product-info {
+  padding-left: 20px;
 }
-
-#item {
-  display: flex;
+.rating {
+  color: #ff9800;
+  font-size: 1.2em;
 }
-.item-right {
-  padding: 70px 25px;
-  font-size: 30px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.price {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #d32f2f;
 }
 button {
-  width: 191px;
-  height: 40px;
-  background-color: #000000d2;
-  margin-top: 40px;
+  background-color: #d32f2f;
+  color: white;
+  padding: 10px 20px;
   border: none;
-  outline: none;
-  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.reviews-section {
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.review {
+  background: white;
+  color: black;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.review-author {
   font-weight: bold;
-  border-radius: 20px;
-  transition: 0.4s;
-}
-footer {
-  text-align: center;
-  background-color: pink;
-  color: #333;
-  text-align: center;
-  margin: 10px 0;
-  position: absolute;
-  bottom: 0;
-  width: 99%;
-}
-button:hover {
-  background-color: yellow;
-  scale: 1.25;
+  margin-top: 10px;
 }

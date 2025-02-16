@@ -25,7 +25,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("https://inkythuatso.com/uploads/thumbnails/800/2022/01/background-do-an-inkythuatso-24-10-33-56.jpg");
+  background-image: url("https://img.tripi.vn/cdn-cgi/image/width=700,height=700/https://gcs.tripi.vn/public-tripi/tripi-feed/img/474076vjq/anh-do-an-anime-de-thuong_085439123.jpg");
+  background-size: 100% 100%;
 }
 .login__container {
   width: 100%;
