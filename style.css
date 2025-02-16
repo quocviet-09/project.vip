@@ -186,6 +186,9 @@
   border-radius: 20px;
   transition: 0.4s;
 }
+.price {
+  color: rgb(0, 0, 0);
+}
 #list-product button:hover {
   background-color: yellow;
   scale: 1.15;

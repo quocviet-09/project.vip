@@ -11,49 +11,48 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <div id="header">
-      <h1>FOOD</h1>
-      <div id="menu">
-        <div class="item">
-          <a href="#trang chủ ">Trang chủ </a>
-        </div>
-        <div class="item">
-          <a href="#sản phẩm">Sản phẩm</a>
-        </div>
-        <div class="item">
-          <a href="#blog">Blog</a>
-        </div>
-        <div class="item">
-          <a href="#liên hệ">Liên hệ</a>
-        </div>
+  <div id="header">
+    <h1>FOOD</h1>
+    <div id="menu">
+      <div class="item">
+        <a href="#trang chủ ">Trang chủ </a>
       </div>
-      <div id="activities">
-        <div>
-          <a href="/signin.html">Đăng nhập </a>
-        </div>
-        <div>
-          <a href="/loginin.html">Đăng kí </a>
-        </div>
-        <div class="item">
-          <h2><i class="ti ti-shopping-cart"></i></h2>
-        </div>
+      <div class="item">
+        <a href="#sản phẩm">Sản phẩm</a>
+      </div>
+      <div class="item">
+        <a href="#blog">Blog</a>
+      </div>
+      <div class="item">
+        <a href="#liên hệ">Liên hệ</a>
       </div>
     </div>
+    <div id="activities">
+      <div>
+        <a href="/signin.html">Đăng nhập </a>
+      </div>
+      <div>
+        <a href="/loginin.html">Đăng kí </a>
+      </div>
+      <div class="item">
+        <h2><i class="ti ti-shopping-cart"></i></h2>
+      </div>
+    </div>
+  </div>
+  <body>
     <div class="container">
       <div class="product-section">
         <img
-          src="/ảnh best seller.png"
+          src="https://cdn.tgdd.vn/Files/2017/11/14/1041443/moi-ngay-uong-1-lon-coca-cola-co-sao-khong-nen-uong-bao-nhieu-la-tot-201909051456391303.jpg"
           alt="Italian Beef and Pizza"
           class="product-image"
-          height="300px"
         />
         <div class="product-info">
-          <h1>Gà chiên sốt Hàn Quốc</h1>
-          <p class="rating">⭐ 4.6</p>
+          <h1>Humburger + 1 Cocacola</h1>
+          <p class="rating">⭐ 4</p>
           <p>
-            Hương vị ca nồng của sốt Hàn Quốc kết hợp với thịt gà được chiên
-            giòn tạo nên hương vị khó tả.
+            deal siêu hời khi mua 1 hamburger bạn sẽ được tặng kèm theo 1 lon
+            cocacola.
           </p>
           <label for="quantity">Số lượng:</label>
           <div class="quantity-container">
@@ -67,7 +66,7 @@
             />
             <button class="quantity-btn" id="increase">+</button>
           </div>
-          <p class="price">159.000 Vnd</p>
+          <p class="price">59.000 Vnd</p>
           <button id="add-to-cart">Thêm vào giỏ hàng</button>
           <p class="package-contents">
             Sự hài lòng của khách hàng luôn được đặt lên hàng đầu.
@@ -99,7 +98,7 @@
       const increaseBtn = document.getElementById("increase");
       const priceDisplay = document.querySelector(".price");
 
-      const basePrice = 159000;
+      const basePrice = 59000;
 
       function updatePrice() {
         let quantity = parseInt(quantityInput.value);
