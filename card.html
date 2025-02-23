@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ Hàng</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .cart {
+        margin-top: 20px;
+      }
+      .cart-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        align-items: center;
+      }
+      .total {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      button {
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Giỏ hàng</h2>
+    <div class="cart"></div>
+    <div class="total">Tổng tiền: 0đ</div>
+    <button onclick="checkout()">Thanh Toán</button>
+
+    <script>
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+      function displayCart() {
+        const cartContainer = document.querySelector(".cart");
+        cartContainer.innerHTML = "";
+        let totalPrice = 0;
+
+        cart.forEach((item) => {
+          totalPrice += item.totalPrice;
+          cartContainer.innerHTML += `
+                    <div class="cart-item">
+                        <span>${item.name}</span>
+                        <span>Số lượng: ${item.quantity}</span>
+                        <span>${item.totalPrice.toLocaleString()}đ</span>
+                    </div>
+                `;
+        });
+
+        document.querySelector(
+          ".total"
+        ).innerText = `Tổng tiền: ${totalPrice.toLocaleString()}đ`;
+      }
+
+      function checkout() {
+        alert(
+          "Thanh toán thành công với tổng tiền: " +
+            document.querySelector(".total").innerText
+        );
+        localStorage.removeItem("cart");
+        window.location.href = "index.html";
+      }
+
+      displayCart();
+    </script>
+  </body>
+</html>

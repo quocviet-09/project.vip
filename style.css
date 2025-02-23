@@ -229,6 +229,8 @@ a {
 
 #saleoff .box-right {
   background-image: url("https://chuphinhmenu.com/wp-content/uploads/2018/03/chup-hinh-mon-an-menu-nha-trang-khanh-hoa-0008.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .box-right {
   width: 100%;

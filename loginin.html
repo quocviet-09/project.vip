@@ -13,28 +13,26 @@
     />
   </head>
   <body>
-    <!-- from login -->
-
-    <div class="login">
-      <div class="login__container">
-        <h1>Đăng Kí</h1>
-        <form>
-          <h5>Email</h5>
-          <input id="email" type="text" class="input-login-username" />
-          <h5>Password</h5>
-          <input id="password" type="password" class="input-login-password" />
-          <h5>Confirm Password</h5>
-          <input
-            id="confirmPassword "
-            type="password"
-            class="input-login-password"
-          />
-          <button type="submit" class="login__signInButton">Đăng Kí</button>
-        </form>
-        <a href="/signin.html" class="accountButton"
-          >Đăng nhập nếu bạn đã có tài khoản!</a
-        >
-      </div>
+    <div class="container">
+      <h2>Đăng Ký</h2>
+      <form id="registerForm">
+        <input type="text" id="username" placeholder="Tên đăng nhập" required />
+        <input type="email" id="email" placeholder="Gmail" required />
+        <input type="tel" id="phone" placeholder="Số điện thoại" required />
+        <input type="password" id="password" placeholder="Mật khẩu" required />
+        <input
+          type="password"
+          id="confirmPassword"
+          placeholder="Điền lại mật khẩu"
+          required
+        />
+        <button type="submit">Đăng Ký</button>
+        <p>
+          Đăng nhập nếu bạn đã có tài khoản!
+          <a href="/signin.html">Đăng nhập</a>
+        </p>
+      </form>
+      <p id="message" style="color: red"></p>
     </div>
   </body>
 </html>
