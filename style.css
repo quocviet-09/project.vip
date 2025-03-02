@@ -27,6 +27,21 @@
   display: flex;
   list-style: none;
 }
+
+.item span {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 9px;
+}
+
 #menu .item {
   margin: 0 27px;
 }
@@ -162,6 +177,9 @@
   flex-wrap: wrap;
   align-items: center;
   margin-top: 50px;
+
+  /* flex-direction: column;
+  align-items: center; Căn giữa nội dung */
 }
 
 #list-product .description .price {
@@ -175,7 +193,7 @@
 }
 
 #list-product button {
-  width: 191px;
+  width: 120px;
   height: 40px;
   background-color: #000000d2;
   margin-top: 40px;
