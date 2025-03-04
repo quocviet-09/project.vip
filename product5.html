@@ -1,123 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chicago Food Combo</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="product.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/@icon/themify-icons@1.0.1-alpha.3/themify-icons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <div id="header">
-    <h1>FOOD</h1>
-    <div id="menu">
-      <div class="item">
-        <a href="#trang chủ ">Trang chủ </a>
-      </div>
-      <div class="item">
-        <a href="#sản phẩm">Sản phẩm</a>
-      </div>
-      <div class="item">
-        <a href="#blog">Blog</a>
-      </div>
-      <div class="item">
-        <a href="#liên hệ">Liên hệ</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chicago Food Combo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="product.css" />
+  <link rel="stylesheet" href="cart.css" />
+  <link href="https://cdn.jsdelivr.net/npm/@icon/themify-icons@1.0.1-alpha.3/themify-icons.min.css" rel="stylesheet" />
+</head>
+<div id="header">
+  <h1>FOOD</h1>
+  <div id="menu">
+    <div class="item">
+      <a href="/index.html">Trang chủ </a>
+    </div>
+    <div class="item">
+      <a href="#sản phẩm">Sản phẩm</a>
+    </div>
+    <div class="item">
+      <a href="#blog">Blog</a>
+    </div>
+    <div class="item">
+      <a href="#liên hệ">Liên hệ</a>
+    </div>
+  </div>
+  <div id="activities">
+    <div>
+      <a href="/loginin.html" style="color: black">Đăng nhập </a>
+    </div>
+    <!-- Thêm id cho icon giỏ hàng -->
+    <div class="item" id="cart-icon" style="position: relative;">
+      <h2 style="margin: 0;">
+        <i class="ti ti-shopping-cart" style="font-size: 24px;"></i>
+        <span id="cart-count"
+          style="width: 20px;height: 20px; position: absolute; top: -5px; right: -5px; background: red; color: white; border-radius: 50%; padding: 2px; font-size: 8px;">
+          0
+        </span>
+      </h2>
+    </div>
+
+  </div>
+</div>
+
+<body>
+  <div class="container">
+    <div class="product-section">
+      <img src="https://beptueu.vn/hinhanh/tintuc/banh-cuon-hinh-anh-mon-an-dac-san-viet-nam.jpg"
+        alt="Italian Beef and Pizza" class="product-image" />
+      <div class="product-info">
+        <h1>Gỏi cuốn</h1>
+        <p class="rating">⭐ 4</p>
+        <p>
+          Thức ăn được lấy cảm hứng từ món gỏi cuốn của người Việt mang đậm
+          bản sắc Việt Nam.
+        </p>
+        <label for="quantity">Số lượng:</label>
+        <div class="quantity-container">
+          <button class="quantity-btn" id="decrease">-</button>
+          <input type="text" id="quantity" class="quantity-input" value="1" readonly />
+          <button class="quantity-btn" id="increase">+</button>
+        </div>
+        <p class="price">59.000 Vnd</p>
+        <button id="add-to-cart">Thêm vào giỏ hàng</button>
+        <p class="package-contents">
+          Sự hài lòng của khách hàng luôn được đặt lên hàng đầu.
+        </p>
       </div>
     </div>
-    <div id="activities">
-      <div>
-        <a href="/loginin.html" style="color: black">Đăng nhập </a>
-      </div>
-      <div class="item">
-        <h2><i class="ti ti-shopping-cart"></i></h2>
+    <div class="reviews-section">
+      <h2>Đánh giá về món ăn!</h2>
+      <div class="reviews">
+        <div class="review">
+          <p class="review-text">“Món ăn rất rất đáng để thử "</p>
+          <p class="review-author">- Kế Đạt</p>
+        </div>
+        <div class="review">
+          <p class="review-text">“”</p>
+          <p class="review-author">-</p>
+        </div>
+        <div class="review">
+          <p class="review-text">“”</p>
+          <p class="review-author">-</p>
+        </div>
       </div>
     </div>
   </div>
-  <body>
-    <div class="container">
-      <div class="product-section">
-        <img
-          src="https://beptueu.vn/hinhanh/tintuc/banh-cuon-hinh-anh-mon-an-dac-san-viet-nam.jpg"
-          alt="Italian Beef and Pizza"
-          class="product-image"
-        />
-        <div class="product-info">
-          <h1>Gỏi cuốn</h1>
-          <p class="rating">⭐ 4</p>
-          <p>
-            Thức ăn được lấy cảm hứng từ món gỏi cuốn của người Việt mang đậm
-            bản sắc Việt Nam.
-          </p>
-          <label for="quantity">Số lượng:</label>
-          <div class="quantity-container">
-            <button class="quantity-btn" id="decrease">-</button>
-            <input
-              type="text"
-              id="quantity"
-              class="quantity-input"
-              value="1"
-              readonly
-            />
-            <button class="quantity-btn" id="increase">+</button>
-          </div>
-          <p class="price">59.000 Vnd</p>
-          <button id="add-to-cart">Thêm vào giỏ hàng</button>
-          <p class="package-contents">
-            Sự hài lòng của khách hàng luôn được đặt lên hàng đầu.
-          </p>
-        </div>
-      </div>
-      <div class="reviews-section">
-        <h2>Đánh giá về món ăn!</h2>
-        <div class="reviews">
-          <div class="review">
-            <p class="review-text">“Món ăn rất rất đáng để thử "</p>
-            <p class="review-author">- Kế Đạt</p>
-          </div>
-          <div class="review">
-            <p class="review-text">“”</p>
-            <p class="review-author">-</p>
-          </div>
-          <div class="review">
-            <p class="review-text">“”</p>
-            <p class="review-author">-</p>
-          </div>
-        </div>
+
+  <!-- Modal hiển thị giỏ hàng -->
+  <div id="cart-modal">
+    <div id="cart-modal-content">
+      <span id="close-modal">&times;</span>
+      <h2>Giỏ hàng của bạn</h2>
+      <div id="cart-items">
+        <!-- Sản phẩm sẽ được chèn vào đây -->
       </div>
     </div>
+  </div>
+  <script src="script.js"></script>
+</body>
 
-    <script>
-      const quantityInput = document.getElementById("quantity");
-      const decreaseBtn = document.getElementById("decrease");
-      const increaseBtn = document.getElementById("increase");
-      const priceDisplay = document.querySelector(".price");
-
-      const basePrice = 59000;
-
-      function updatePrice() {
-        let quantity = parseInt(quantityInput.value);
-        let totalPrice = quantity * basePrice;
-        priceDisplay.textContent = totalPrice.toLocaleString() + " Vnd";
-      }
-
-      increaseBtn.addEventListener("click", function () {
-        let quantity = parseInt(quantityInput.value);
-        quantityInput.value = quantity + 1;
-        updatePrice();
-      });
-
-      decreaseBtn.addEventListener("click", function () {
-        let quantity = parseInt(quantityInput.value);
-        if (quantity > 1) {
-          quantityInput.value = quantity - 1;
-          updatePrice();
-        }
-      });
-
-      updatePrice();
-    </script>
-  </body>
 </html>

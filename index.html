@@ -1,508 +1,408 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Việt</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/@icon/themify-icons@1.0.1-alpha.3/themify-icons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="packaging">
-      <div id="header">
-        <h1>FOOD</h1>
-        <div id="menu">
-          <div class="item">
-            <a href="#trang chủ ">Trang chủ </a>
-          </div>
-          <div class="item">
-            <a href="#sanpham">Sản phẩm</a>
-          </div>
-          <div class="item">
-            <a href="#blog">Blog</a>
-          </div>
-          <div class="item">
-            <a href="#liên hệ">Liên hệ</a>
-          </div>
-         
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Việt</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/@icon/themify-icons@1.0.1-alpha.3/themify-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="cart.css" />
+</head>
+
+<body>
+  <div id="packaging">
+    <div id="header">
+      <h1>FOOD</h1>
+      <div id="menu">
+        <div class="item">
+          <a href="/index.html">Trang chủ </a>
         </div>
-        <div id="activities">
-          
-          <div >
-            <a href="/loginin.html" style="color: black;">Đăng nhập </a>
-          </div>
-          <div class="item">
-            <h2><i class="ti ti-shopping-cart"></i></h2>
-            <span>0</span>
-          </div>
+        <div class="item">
+          <a href="#sanpham">Sản phẩm</a>
         </div>
+        <div class="item">
+          <a href="#blog">Blog</a>
+        </div>
+        <div class="item">
+          <a href="#liên hệ">Liên hệ</a>
+        </div>
+
       </div>
-      <div id="banner">
-        <div class="item-left">
-          <h2>
-            <span> FOOD </span>
-            <br />
-            <span> PREMIUM </span>
+      <div id="activities">
+
+        <div>
+          <a href="/loginin.html" style="color: black;">Đăng nhập </a>
+        </div>
+        <div class="item" id="cart-icon" style="position: relative;">
+          <h2 style="margin: 0;">
+            <i class="ti ti-shopping-cart" style="font-size: 24px;"></i>
+            <span id="cart-count"
+              style="width: 20px;height: 20px; position: absolute; top: -5px; right: -5px; background: red; color: white; border-radius: 50%; padding: 2px; font-size: 8px;">
+              0
+            </span>
           </h2>
-          <p>
-            Đặt đồ ăn giao hàng tận nhà nhanh chóng lấp đầy chiếc bụng đói của
-            bạn với những món ngon yêu thích và dịch vụ giao hàng “thần tốc”.
-            GrabFood hiện đang có mặt tại nhiều tỉnh thành ở Việt Nam: Thành phố
-            Hồ Chí Minh, Hà Nội, Đà Nẵng, Vũng Tàu, Bình Dương, Đồng Nai, Cần
-            Thơ, Đà Lạt,…. Chúng tôi đang dần mở rộng thêm nhiều khu vực trong
-            thời gian tới!
-          </p>
-          <button>Buy now</button>
-        </div>
-        <div class="item-right">
-          <img src="https://studiovietnam.com/wp-content/uploads/2022/03/hinh-anh-ve-do-an-20.jpg" alt=""
-          width="100px" height="290px" >
-          <img src="https://studiovietnam.com/wp-content/uploads/2022/03/hinh-anh-ve-do-an-18.jpg" alt=""
-          width="100px" height="320px" >
-          <img src="https://studiovietnam.com/wp-content/uploads/2022/03/hinh-anh-ve-do-an-21.jpg" alt=""
-          width="100px" height="290px">
         </div>
       </div>
-      <div id="wb-product">
-        <h2>Best seller</h2>
-        <ul id="list-product">
-           <div class="product-food1">
-            <img
-              class="items"
-              src="https://images.pexels.com/photos/262897/pexels-photo-262897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-            />
-            <div class="stars">
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-            </div>
-            <div class="name">Bò hầm kim chi</div>
-            
-            <div class="price">89.000 VNĐ</div>
-            <a href="/product1.html">
+    </div>
+    <div id="banner">
+      <div class="item-left">
+        <h2>
+          <span> FOOD </span>
+          <br />
+          <span> PREMIUM </span>
+        </h2>
+        <p>
+          Đặt đồ ăn giao hàng tận nhà nhanh chóng lấp đầy chiếc bụng đói của
+          bạn với những món ngon yêu thích và dịch vụ giao hàng “thần tốc”.
+          GrabFood hiện đang có mặt tại nhiều tỉnh thành ở Việt Nam: Thành phố
+          Hồ Chí Minh, Hà Nội, Đà Nẵng, Vũng Tàu, Bình Dương, Đồng Nai, Cần
+          Thơ, Đà Lạt,…. Chúng tôi đang dần mở rộng thêm nhiều khu vực trong
+          thời gian tới!
+        </p>
+        <button>Buy now</button>
+      </div>
+      <div class="item-right">
+        <img src="https://studiovietnam.com/wp-content/uploads/2022/03/hinh-anh-ve-do-an-20.jpg" alt="" width="100px"
+          height="290px">
+        <img src="https://studiovietnam.com/wp-content/uploads/2022/03/hinh-anh-ve-do-an-18.jpg" alt="" width="100px"
+          height="320px">
+        <img src="https://studiovietnam.com/wp-content/uploads/2022/03/hinh-anh-ve-do-an-21.jpg" alt="" width="100px"
+          height="290px">
+      </div>
+    </div>
+    <div id="wb-product">
+      <h2>Best seller</h2>
+      <ul id="list-product">
+        <div class="product-food1">
+          <img class="items"
+            src="https://images.pexels.com/photos/262897/pexels-photo-262897.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="" />
+          <div class="stars">
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+          </div>
+          <div class="name">Bò hầm kim chi</div>
+
+          <div class="price">89.000 VNĐ</div>
+          <a href="/product1.html">
             <button>Buy</button>
           </a>
-            <button >giỏ </button>
-           </div>
-           <div class="product-food2">
-           <img
-           class="items"
-           src="https://lavenderstudio.com.vn/wp-content/uploads/2017/03/chup-san-pham.jpg"
-           alt=""
-            />
-            <div class="stars">
-              <span>
-                <img
-                class="star"
+          <button>giỏ </button>
+        </div>
+        <div class="product-food2">
+          <img class="items" src="https://lavenderstudio.com.vn/wp-content/uploads/2017/03/chup-san-pham.jpg" alt="" />
+          <div class="stars">
+            <span>
+              <img class="star"
                 src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                alt=""
-                />
-              </span>
-              <span>
-                <img
-                class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                  />
-              </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                  />
-                </span>
-                <span>
-                  <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                  />
-                </span>
-                <span>
-                  <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                  />
-                </span>
-              </div>
-              <div class="name">Sashimi hải sản</div>
-              <div class="price">119.000 VNĐ </div>
-              <a href="/product2.html">
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+          </div>
+          <div class="name">Sashimi hải sản</div>
+          <div class="price">119.000 VNĐ </div>
+          <a href="/product2.html">
             <button>Buy</button>
           </a>
           <button>Giỏ</button>
-           </div>
-           <div class="product-food3">
-             <img
-             class="items"
-              src="/ảnh best seller.png"
-              alt=""
-            />
-            <div class="stars">
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              <span>
-                <img
-                class="star"
+        </div>
+        <div class="product-food3">
+          <img class="items" src="/ảnh best seller.png" alt="" />
+          <div class="stars">
+            <span>
+              <img class="star"
                 src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                alt=""
-                />
-              </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              <span>
-                <img
-                class="star"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
                 src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                alt=""
-                />
-              </span>
-            </div>
-            <div class="name">Gà chiên sốt Hàn Quốc</div>
-            <div class="price">159.000 VNĐ</div>
-            <a href="/product3.html">
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+          </div>
+          <div class="name">Gà chiên sốt Hàn Quốc</div>
+          <div class="price">159.000 VNĐ</div>
+          <a href="/product3.html">
             <button>Buy</button>
           </a>
-            <button>Giỏ</button>
-            </div> 
-        
+          <button>Giỏ</button>
+        </div>
+
       </ul>
-      
-        <h2>Các mặt hàng sản phẩm</h2>
-        <ul id="list-product">
-          <div class="product-food4">
-            <img
-            class="items"
-              src="https://beptueu.vn/hinhanh/tintuc/top-15-hinh-anh-mon-an-ngon-viet-nam-khien-ban-khong-the-roi-mat-1.jpg"
-              alt=""
-            />
-            <div class="stars">
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                  />
-                </span>
-              </div>
-              <div class="name">Bánh mì thịt nướng</div>
-              
-              <div class="price">30.000 VNĐ</div>
-              <a href="/product4.html">
+
+      <h2>Các mặt hàng sản phẩm</h2>
+      <ul id="list-product">
+        <div class="product-food4">
+          <img class="items"
+            src="https://beptueu.vn/hinhanh/tintuc/top-15-hinh-anh-mon-an-ngon-viet-nam-khien-ban-khong-the-roi-mat-1.jpg"
+            alt="" />
+          <div class="stars">
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+          </div>
+          <div class="name">Bánh mì thịt nướng</div>
+
+          <div class="price">30.000 VNĐ</div>
+          <a href="/product4.html">
             <button>Buy</button>
           </a>
-            <button>Giỏ</button>
-            </div>
-            <div class="product-food5"> 
-              <img
-              class="items"
-              src="https://beptueu.vn/hinhanh/tintuc/banh-cuon-hinh-anh-mon-an-dac-san-viet-nam.jpg"
-              alt=""
-              />
-              <div class="stars">
-                <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                  />
-                </span>
-                <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-            </div>
-            <div class="name">Bánh cuốn</div>
-            <div class="price">59.000 VNĐ </div>
-            <a href="/product5.html">
+          <button>Giỏ</button>
+        </div>
+        <div class="product-food5">
+          <img class="items" src="https://beptueu.vn/hinhanh/tintuc/banh-cuon-hinh-anh-mon-an-dac-san-viet-nam.jpg"
+            alt="" />
+          <div class="stars">
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+          </div>
+          <div class="name">Bánh cuốn</div>
+          <div class="price">59.000 VNĐ </div>
+          <a href="/product5.html">
             <button>Buy</button>
           </a>
-            <button>Giỏ</button>
-            </div>
-            <div class="product-food6">
-              <img
-              class="items"
-              src="https://beptueu.vn/hinhanh/tintuc/top-15-hinh-anh-mon-an-ngon-viet-nam-khien-ban-khong-the-roi-mat-10.jpg"
-              alt=""
-            />
-            <div class="stars">
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                  />
-              </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                  />
-              </span>
-            </div>
-            <div class="name">Bún bò Huế</div>
-            <div class="price">49.000 VNĐ</div>
-            <a href="/product6.html">
+          <button>Giỏ</button>
+        </div>
+        <div class="product-food6">
+          <img class="items"
+            src="https://beptueu.vn/hinhanh/tintuc/top-15-hinh-anh-mon-an-ngon-viet-nam-khien-ban-khong-the-roi-mat-10.jpg"
+            alt="" />
+          <div class="stars">
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+          </div>
+          <div class="name">Bún bò Huế</div>
+          <div class="price">49.000 VNĐ</div>
+          <a href="/product6.html">
             <button>Buy</button>
           </a>
-            <button>Giỏ</button>
-            </div>
-          
-        
+          <button>Giỏ</button>
+        </div>
+
+
       </ul>
       <ul id="list-product">
-          <div class="product-food7">
-            <img
-            class="items"
+        <div class="product-food7">
+          <img class="items"
             src="https://cdn.tgdd.vn/Files/2017/11/14/1041443/moi-ngay-uong-1-lon-coca-cola-co-sao-khong-nen-uong-bao-nhieu-la-tot-201909051456391303.jpg"
-            alt=""
-            />
-            <div class="stars">
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                  />
-                </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-             <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-            </div>
-            <div class="name">Hamburger + 1 Cocacola</div>
-            
-            <div class="price">59.000 VNĐ</div>
-            <a href="/product7.html">
-            <button>Buy</button>
-          </a>
-             <button>Giỏ</button>
-             </div>
-   
-
-             <div class="product-food8">
-               <img
-               class="items"
-               src="https://www.tourchauau.net/images/tour/Italia/mi-spaghetti-y-3.jpeg"
-               alt=""
-            />
-            <div class="stars">
-              <span>
-                <img
-                class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                  />
-                </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-            </div>
-            <div class="name">Mì Ý</div>
-            <div class="price">60.000 VNĐ </div>
-            <a href="/product8.html">
-            <button>Buy</button>
-          </a>
-            <button>Giỏ</button>
+            alt="" />
+          <div class="stars">
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
           </div>
-  
+          <div class="name">Hamburger + 1 Cocacola</div>
 
-          <div class="product-food9">
-            <img
-            class="items"
-            src="https://dayphache.edu.vn/wp-content/uploads/2019/11/soda-chanh.jpg"
-            alt=""
-            />
-            <div class="stars">
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              <span>
-                <img
-                  class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                />
-              </span>
-              <span>
-                <img
-                class="star"
-                  src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
-                  alt=""
-                  />
-                </span>
-            </div>
-            <div class="name">Soda Chanh</div>
-            <div class="price">20.000 VNĐ</div>
-            <a href="/product9.html">
+          <div class="price">59.000 VNĐ</div>
+          <a href="/product7.html">
             <button>Buy</button>
           </a>
           <button>Giỏ</button>
+        </div>
+
+
+        <div class="product-food8">
+          <img class="items" src="https://www.tourchauau.net/images/tour/Italia/mi-spaghetti-y-3.jpeg" alt="" />
+          <div class="stars">
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
           </div>
-          
-        
+          <div class="name">Mì Ý</div>
+          <div class="price">60.000 VNĐ </div>
+          <a href="/product8.html">
+            <button>Buy</button>
+          </a>
+          <button>Giỏ</button>
+        </div>
+
+
+        <div class="product-food9">
+          <img class="items" src="https://dayphache.edu.vn/wp-content/uploads/2019/11/soda-chanh.jpg" alt="" />
+          <div class="stars">
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+            <span>
+              <img class="star"
+                src="https://t3.ftcdn.net/jpg/01/21/64/88/360_F_121648819_ZQ0tZ6tjLzxim1SG7CQ86raBw4sglCzB.jpg"
+                alt="" />
+            </span>
+          </div>
+          <div class="name">Soda Chanh</div>
+          <div class="price">20.000 VNĐ</div>
+          <a href="/product9.html">
+            <button>Buy</button>
+          </a>
+          <button>Giỏ</button>
+        </div>
+
+
       </ul>
-        
+
       <div id="saleoff">
         <div class="box-left">
           <h1>
-            <p>Giảm giá  cho những vị khách đầu tiên</p>
+            <p>Giảm giá cho những vị khách đầu tiên</p>
             <span>lên tới 50%</span>
           </h1>
         </div>
@@ -536,7 +436,7 @@
           </div>
         </ul>
 
-                </div>
+      </div>
       <div class="box">
         <h3>Liên hệ với chúng tôi</h3>
         <form action="">
@@ -546,5 +446,17 @@
       </div>
 
     </div>
-    </body>
+    <!-- Modal hiển thị giỏ hàng -->
+    <div id="cart-modal">
+      <div id="cart-modal-content">
+        <span id="close-modal">&times;</span>
+        <h2>Giỏ hàng của bạn</h2>
+        <div id="cart-items">
+          <!-- Sản phẩm sẽ được chèn vào đây -->
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
 </html>
