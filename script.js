@@ -7,8 +7,14 @@ const addToCartBtn = document.getElementById("add-to-cart");
 const cartIcon = document.getElementById("cart-icon");
 const cartModal = document.getElementById("cart-modal");
 const closeModal = document.getElementById("close-modal");
+// Get the price text from the HTML element
+const priceElement = document.querySelector(".price");
+let basePrice = 0;
+if (priceElement) {
+  // Remove non-digit characters to extract the numeric value
+  basePrice = parseFloat(priceElement.textContent.replace(/[^0-9]/g, ''));
+}
 
-const basePrice = 89000;
 
 function updatePrice() {
   if (quantityInput && priceDisplay) {
